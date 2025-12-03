@@ -1,4 +1,4 @@
-# ADR-2512005: Cross-Account DNS Delegation
+# INFRA-004: Cross-Account DNS Delegation
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

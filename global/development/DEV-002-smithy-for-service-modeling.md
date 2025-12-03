@@ -1,4 +1,4 @@
-# ADR-2512006: Use Smithy for Service Modeling
+# DEV-002: Use Smithy for Service Modeling
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

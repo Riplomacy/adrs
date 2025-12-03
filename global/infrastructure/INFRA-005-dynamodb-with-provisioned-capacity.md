@@ -1,4 +1,4 @@
-# ADR-2512008: Use DynamoDB with Provisioned Capacity
+# INFRA-005: Use DynamoDB with Provisioned Capacity
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

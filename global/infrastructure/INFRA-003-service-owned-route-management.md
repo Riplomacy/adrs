@@ -1,4 +1,4 @@
-# ADR-2512004: Service-Owned Route Management
+# INFRA-003: Service-Owned Route Management
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

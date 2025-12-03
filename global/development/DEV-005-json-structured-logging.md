@@ -1,4 +1,4 @@
-# ADR-2512010: JSON-Based Structured Logging
+# DEV-005: JSON-Based Structured Logging
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

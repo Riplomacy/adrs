@@ -1,4 +1,4 @@
-# ADR-2512007: Use Docker for Staging Environment
+# DEV-003: Use Docker for Staging Environment
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

@@ -1,4 +1,4 @@
-# ADR-2512012: Regional API Gateway Endpoints
+# INFRA-006: Regional API Gateway Endpoints
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

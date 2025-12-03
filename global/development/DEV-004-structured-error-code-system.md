@@ -1,4 +1,4 @@
-# ADR-2512009: Structured Error Code System
+# DEV-004: Structured Error Code System
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

@@ -1,4 +1,4 @@
-# ADR-2512003: Use Single Shared API Gateway with Service Routes
+# INFRA-002: Use Single Shared API Gateway with Service Routes
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

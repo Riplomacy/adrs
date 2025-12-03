@@ -1,4 +1,4 @@
-# ADR-2512011: Declarative API Design
+# DEV-006: Declarative API Design
 
 **Date:** 2025-12-03\
 **Status:** Accepted\

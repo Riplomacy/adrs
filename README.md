@@ -13,20 +13,25 @@
 
 ### Naming Convention
 
-Format: `YYMM###-descriptive-title.md`
+Format: `PREFIX-###-descriptive-title.md`
 
-- **YYMM**: Year and month (e.g., `2512` for December 2025)
-- **###**: Sequential number across all ADRs within that month (001, 002, 003...)
+- **PREFIX**: Category-specific prefix
+  - `DEV-###`: global/development decisions
+  - `INFRA-###`: global/infrastructure decisions
+  - `ADR-###` or service initials (e.g., `UDS-###`): service-specific decisions
+- **###**: Sequential number within each category (001, 002, 003...)
 - **descriptive-title**: Kebab-case description of the decision
 
 Examples:
 
-- `2512001-c4-model-for-architecture-documentation.md`
-- `2512002-public-api-gateway-with-iam-restrictions.md`
+- `INFRA-001-c4-model-for-architecture-documentation.md`
+- `INFRA-002-public-api-gateway-with-iam-restrictions.md`
+- `DEV-001-rust-coding-standards.md`
+- `UDS-001-dynamodb-table-design.md`
 
 ### Referencing ADRs
 
-Use the numeric identifier for quick reference: "See ADR 2512001" or just "2512001"
+Use the full identifier for reference: "See INFRA-001" or "DEV-002"
 
 ## Template
 

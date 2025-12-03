@@ -1,4 +1,4 @@
-# ADR-2512001: Use C4 Model for Architecture Documentation
+# DEV-001: Use C4 Model for Architecture Documentation
 
 **Date:** 2025-12-03\
 **Status:** Proposed\

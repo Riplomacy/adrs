@@ -1,4 +1,4 @@
-# ADR-XXX: [Title]
+# PREFIX-###: [Title]
 
 **Date:** YYYY-MM-DD\
 **Status:** [Proposed | Accepted | Rejected | Superseded]\
