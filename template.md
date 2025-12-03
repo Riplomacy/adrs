@@ -20,7 +20,7 @@
 
 ### Negative
 
-- [What becomes more difficult or worse after this change?]
+- [What becomes more difficult or worse after this change? Use *italics* for "None identified" comments]
 
 ### Neutral
 
@@ -33,4 +33,4 @@
 
 ## Implementation Notes
 
-[Any specific technical details, migration steps, or implementation considerations]
+- [Any specific technical details, migration steps, or implementation considerations]
