@@ -17,7 +17,7 @@ Format: `STATUS-PREFIX-###-descriptive-title.md`
 
 - **STATUS**: Status indicator
   - `A-`: Accepted
-  - `D-`: Draft
+  - `P-`: Proposed
   - `S-`: Superseded
   - `R-`: Rejected
 - **PREFIX**: Category-specific prefix
@@ -31,7 +31,7 @@ Format: `STATUS-PREFIX-###-descriptive-title.md`
 Examples:
 
 - `A-INFRA-001-c4-model-for-architecture-documentation.md`
-- `D-INFRA-002-public-api-gateway-with-iam-restrictions.md`
+- `P-INFRA-002-public-api-gateway-with-iam-restrictions.md`
 - `A-DEV-001-rust-coding-standards.md`
 - `S-UDS-001-old-dynamodb-table-design.md`
 

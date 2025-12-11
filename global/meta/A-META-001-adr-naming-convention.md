@@ -14,13 +14,13 @@ Use status prefixes in ADR filenames with the format: `STATUS-PREFIX-###-descrip
 
 ### Status Indicators
 - `A-` = Accepted
-- `D-` = Draft  
+- `P-` = Proposed  
 - `S-` = Superseded
 - `R-` = Rejected
 
 ### Examples
 - `A-META-001-adr-naming-convention.md`
-- `D-INFRA-002-public-api-gateway-design.md`
+- `P-INFRA-002-public-api-gateway-design.md`
 - `S-DEV-001-old-rust-standards.md`
 - `R-UDS-003-rejected-nosql-approach.md`
 
