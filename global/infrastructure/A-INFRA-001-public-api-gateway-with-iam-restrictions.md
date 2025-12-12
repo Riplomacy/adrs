@@ -1,7 +1,7 @@
 # INFRA-001: Use Public API Gateway with IAM Restrictions
 
 **Date:** 2025-12-03\
-**Status:** Accepted\
+**Status:** Accepted (IAM implementation updated by INFRA-007)\
 **Deciders:** Jean-Sébastien Dominique
 
 ## Context
