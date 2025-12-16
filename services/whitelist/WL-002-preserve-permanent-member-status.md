@@ -1,6 +1,6 @@
 # WL-002: Preserve Permanent Member Status During Timed Membership Migration
 
-**Date:** 2024-12-14\
+**Date:** 2025-12-14\
 **Status:** Accepted\
 **Deciders:** Jean-Sébastien Dominique
 
