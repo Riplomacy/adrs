@@ -1,6 +1,6 @@
 # WL-001: Timed Group Membership for Seeder Whitelist Management
 
-**Date:** 2024-12-14\
+**Date:** 2025-12-14\
 **Status:** Proposed\
 **Deciders:** Jean-Sébastien Dominique
 
