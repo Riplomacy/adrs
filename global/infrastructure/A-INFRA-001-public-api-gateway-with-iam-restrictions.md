@@ -6,7 +6,7 @@
 
 ## Context
 
-Internal service communication requires API Gateway endpoints. Best practices recommend Private APIs for internal services, but this creates significant cost and complexity issues for the Riplomacy Bot project. Private APIs require Lambda functions in VPCs, VPC Endpoints (~$7/month), and NAT Gateways (~$45/month) for internet access. Total additional cost would be ~$52/month for proper private networking.
+Internal service communication requires API Gateway endpoints. Best practices recommend Private APIs for internal services, but this creates significant cost and complexity issues for the Riplomacy Bot project. Private APIs require Lambda functions in VPCs, VPC Endpoints (\~$7/month), and NAT Gateways (\~$45/month) for internet access. Total additional cost would be ~$52/month for proper private networking.
 
 ## Decision
 
