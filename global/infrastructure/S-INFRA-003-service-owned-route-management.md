@@ -1,7 +1,7 @@
 # INFRA-003: Service-Owned Route Management
 
 **Date:** 2025-12-03\
-**Status:** Accepted\
+**Status:** Superseded by INFRA-008 (no shared gateway left to route on; each service owns a Function URL instead)\
 **Deciders:** Jean-Sébastien Dominique
 
 ## Context

@@ -1,7 +1,7 @@
 # INFRA-001: Use Public API Gateway with IAM Restrictions
 
 **Date:** 2025-12-03\
-**Status:** Accepted (IAM implementation updated by INFRA-007)\
+**Status:** Superseded by INFRA-008 (internal services moved off API Gateway entirely to Lambda Function URLs; IAM implementation was previously updated by INFRA-007)\
 **Deciders:** Jean-Sébastien Dominique
 
 ## Context

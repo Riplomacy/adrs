@@ -1,7 +1,7 @@
 # INFRA-007: Use Account-Level API Gateway Access Control
 
 **Date:** 2025-12-12\
-**Status:** Accepted\
+**Status:** Superseded by INFRA-008 (the account-level, no-per-service-config principle carries forward, implemented via Function URL policies instead of an API Gateway resource policy)\
 **Deciders:** Jean-Sébastien Dominique
 
 ## Context
