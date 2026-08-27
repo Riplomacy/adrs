@@ -1,7 +1,7 @@
 # INFRA-008: Internal Services Use Lambda Function URLs, Not the Shared API Gateway
 
 **Date:** 2026-08-26\
-**Status:** Accepted\
+**Status:** Accepted — fully implemented 2026-08-27 (`ServicesApi` and `ServicesInfrastructure` stacks deleted: RestApi, custom domain, ACM cert, hosted zone, and the cross-account DNS delegation from `amateurradio.engineer` all removed)\
 **Deciders:** Jean-Sébastien Dominique
 
 ## Context
