@@ -10,6 +10,9 @@
 - **services/**: Service-specific architectural decisions
   - Individual directories for each service (e.g., `user-data-service/`)
   - Services can create subdirectories as needed
+- **lessons-learned/**: Postmortem-style records of real incidents (outages, near-misses) —
+  what happened and why, distinct from ADRs' forward-looking decision records. See
+  "Lessons Learned" below for its own naming convention and template.
 
 ### Naming Convention
 
@@ -42,3 +45,25 @@ Use the category and number for reference: "See INFRA-001" or "DEV-002"
 ## Template
 
 Use `template.md` for creating new ADRs.
+
+## Lessons Learned
+
+Unlike ADRs (which record a decision and its rationale, and whose content stays immutable
+once written), entries in `lessons-learned/` record what actually happened during a real
+incident and why — no Decision/Alternatives framing, no immutability requirement if new
+facts come to light.
+
+### Naming Convention
+
+Format: `LESSON-###-descriptive-title.md`, sequential across the whole directory (no
+per-category numbering, no status prefix — a lesson doesn't get superseded, it just is).
+
+### Template
+
+Use `lessons-learned/template.md`: What Happened / Root Cause / Resolution / Takeaway.
+The Takeaway section is the one worth linking to from elsewhere — it's the actionable
+rule, not the incident narrative.
+
+### Referencing
+
+Use the lesson number: "See LESSON-001".
