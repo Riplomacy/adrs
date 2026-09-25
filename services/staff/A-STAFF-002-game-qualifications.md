@@ -1,7 +1,7 @@
 # STAFF-002: Game Qualifications Decouple Staff Rank from Game
 
 **Date:** 2026-09-25\
-**Status:** Accepted\
+**Status:** Accepted (rank ladder amended by STAFF-003)\
 **Deciders:** Jean-Sébastien Dominique, Praetorian
 
 ## Context
