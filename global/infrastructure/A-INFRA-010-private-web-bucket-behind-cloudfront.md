@@ -6,7 +6,7 @@
 
 ## Context
 
-Ban appeal tickets needed a help animation showing players where to find their Steam ID. Discord only animates an image inline when it is given a direct URL ending in `.gif`, served with the right content type, with no redirect or authentication in between. Imgur, where the animation originally lived, serves gifs as MP4 video, which Discord shows as a click-to-play player instead. The animation had to be hosted somewhere we control.
+Ban appeal tickets needed a help animation showing players where to find their Steam ID. Discord animates an image inline when it is given a direct link to a gif file. The animation originally lived on a third-party image host, which can remove or change it at any time. It needed to be hosted somewhere we control.
 
 Every existing bucket in this account blocks all public access, and an automated invariant enforces that on every bucket. They also hold private data (transcripts, staff and Patreon datasets, whitelists, logs), so none of them can be opened up, or reused for public content.
 
@@ -45,7 +45,7 @@ The distribution is served on its default CloudFront domain; no custom domain is
 
 - **Public-read bucket with no CloudFront:** Rejected -- needs a public bucket policy, which conflicts with the account-wide public-access invariant, and the bucket would be one mistake away from exposing non-public content
 - **Reuse an existing bucket:** Rejected -- every existing bucket holds private data; carving out a public prefix there weakens a bucket whose whole purpose is being private
-- **Keep hosting on Imgur or another image host:** Rejected -- converts gifs to MP4, which is the problem being solved, and hands a part of our ticket flow to a third party
+- **Keep hosting on Imgur or another image host:** Rejected -- the file would stay under a third party's control and could disappear, breaking part of our ticket flow
 - **Serve the file from a Lambda Function URL:** Rejected -- pays per request and runs code to serve a static file, and is a poor fit for a static file
 
 ## Implementation Notes
