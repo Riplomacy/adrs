@@ -1,6 +1,6 @@
 # Architecture Decision Records (ADRs)
 
-The decision log for the Riplomacy workspace: why the system has the shape it has. Each record captures one architecturally significant decision, its context, the options that lost, and its consequences. See ADR-0001 for why the log works this way.
+The decision log for the Riplomacy workspace: why the system has the shape it has. Each record captures one architecturally significant decision, its context, the options that lost, and its consequences. See ADR-0034 for why the log works this way.
 
 ## What qualifies
 
@@ -64,9 +64,9 @@ When unsure, ask: would someone changing this later need to know *why* it was do
 - Each workspace repository's README links here.
 - Past decisions that were never recorded may be added retroactively, dated when they were made.
 
-## Legacy records
+## Converted records
 
-Records in `global/` and `services/` predate ADR-0001. They keep their `PREFIX-###` identifiers and filenames, because code and other records cite them. Their `A-`/`P-`/`S-`/`R-` filename prefixes are historical. The Status line inside each file is authoritative, and they are no longer renamed when their status changes. No new records are added there.
+ADR-0001 to ADR-0033 were written under an earlier convention (`PREFIX-###` identifiers such as `INFRA-008`) and converted to this format on 2026-10-14. Each one names its old identifier on a `Converted from` line. They predate the Confidence section, so they don't have one. Records that didn't meet the "What qualifies" test were marked Deprecated. Proposed records that didn't qualify were dropped; they remain in git history.
 
 ## Lessons Learned
 
