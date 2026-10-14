@@ -46,15 +46,16 @@ When unsure, ask: would someone changing this later need to know *why* it was do
 
 | Status | Meaning |
 |---|---|
-| Proposed | Under discussion. The content may still change. |
+| Proposed | Under discussion in an open pull request. The content may still change. |
 | Accepted | Decided. The content is frozen. |
 | Rejected | Decided against. The content is frozen and states why, so the question isn't reopened. |
 | Superseded | Replaced by a later record, named on the Status line. |
 | Deprecated | No longer in effect, with no replacement. The reason is given on the Status line. |
 
-- A record is drafted on its own branch with Status Proposed, and a pull request is opened for it. Review and discussion happen on the pull request.
-- Once the decider decides, the Status line is updated on the branch and the pull request is merged. Rejected records are merged too, so the reasoning is kept. `main` only ever holds decided records.
-- It becomes Accepted or Rejected only on the decider's explicit approval. On approval, the Status line records the outcome and its date (for example `Accepted 2026-10-14`), the Date line keeps when the record was proposed, and the content is frozen.
+- A record is drafted on its own branch and opened as a pull request. The record already carries the status merging would give it: `Accepted`. Review and discussion happen on the pull request, and revisions are pushed to it.
+- Merging the pull request is the acceptance; the merge date is the acceptance date. The Date line keeps when the record was proposed. From then on the content is frozen.
+- To reject, the Status line is changed to `Rejected` with the reason, and the pull request is merged anyway, so the reasoning is kept.
+- `main` only ever holds decided records, so Proposed only exists while a pull request is open.
 - To change a decision, write a new record that supersedes the old one. On the old record, only the Status line changes, to point at its replacement.
 - Records are never deleted.
 

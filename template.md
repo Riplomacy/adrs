@@ -1,6 +1,6 @@
 # NNNN: [The decision, as a short noun phrase]
 
-**Status:** Proposed\
+**Status:** Accepted\
 **Date:** YYYY-MM-DD\
 **Deciders:** [Names]\
 **Scope:** [Workspace, or the repositories/services it governs]
