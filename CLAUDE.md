@@ -1,11 +1,12 @@
-# AGENTS.md — ADRs Repo
+# CLAUDE.md — ADRs Repo
 
-This repo is the Architecture Decision Record store for the Riplomacy workspace (see `../AGENTS.md`), covering `riplomacy_bot` and its sibling services. See `README.md` for directory structure and the `STATUS-PREFIX-###-title.md` naming convention, and `template.md` for the ADR format itself.
+This repo is the Architecture Decision Record store for the Riplomacy workspace, covering `riplomacy_bot` and its sibling repositories. `README.md` holds the rules (what qualifies, numbering, lifecycle), `template.md` the format, and ADR-0001 the reasoning behind both.
 
 ## Key Behaviors
 
-- **Check before architectural work.** Before making or implementing a non-trivial architectural decision in any Riplomacy repo, check whether an ADR here already covers the area (`global/infrastructure`, `global/development`, or the relevant `services/<name>` directory).
-- **Write one after.** After landing an architectural decision (not an implementation detail), add an ADR here recording it — context, decision, consequences, alternatives considered.
-- **Existing ADR content is immutable.** Once written, an ADR's Context/Decision/Consequences/Alternatives sections stay as originally written, even after the decision changes — it's a record of what was decided and why *at the time*. A changed decision means writing a **new** ADR that supersedes or augments the old one (reference it by category+number, e.g. "Supersedes INFRA-002"), never rewriting the old one's body to match the new reality.
-- **The one exception:** the **Status line** of a superseded/rejected ADR may be updated to point at what replaced it (e.g. `Superseded by INFRA-008`), and the file renamed from its `A-`/`P-` prefix to `S-`/`R-` per the naming convention — that's lifecycle tracking, not a content rewrite.
-- Commit messages here follow the same conventions as `riplomacy_bot`. This repo has its own git remote (`git@github.com:Riplomacy/adrs.git`) — pushing it is a separate action from pushing `riplomacy_bot`, confirm before doing so.
+- **Only architecturally significant decisions.** Apply the README's "What qualifies" test before proposing a record. Features, business rules, parameter values, bug fixes and process choices are not ADRs. When in doubt, ask Signal rather than writing one.
+- **Check before architectural work.** Before making or implementing a structural decision in any Riplomacy repo, check `decisions/` and the legacy `global/` and `services/` records for one that already covers it.
+- **Draft as Proposed, never self-accept.** New records are committed to `main` with `Status: Proposed`. Only Signal's explicit approval makes a record Accepted or Rejected. No pull requests.
+- **Accepted and Rejected records are immutable.** A changed decision gets a new record that supersedes the old one. On the old record, only the Status line changes. Files are never renamed or deleted.
+- **Why, not how.** No code, configuration, file paths or step-by-step instructions in a record.
+- Commit messages follow the same conventions as `riplomacy_bot`. This repo has its own git remote (`git@github.com:Riplomacy/adrs.git`): pushing it is a separate action from pushing `riplomacy_bot`, so confirm before doing so.

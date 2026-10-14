@@ -1,50 +1,72 @@
 # Architecture Decision Records (ADRs)
 
-## Organization
+The decision log for the Riplomacy workspace: why the system has the shape it has. Each record captures one architecturally significant decision, its context, the options that lost, and its consequences. See ADR-0001 for why the log works this way.
 
-### Structure
+## What qualifies
 
-- **global/**: Decisions that apply across all Riplomacy services
-  - **infrastructure/**: AWS, networking, deployment decisions
-  - **development/**: Coding practices, tooling, testing approaches
-- **services/**: Service-specific architectural decisions
-  - Individual directories for each service (e.g., `user-data-service/`)
-  - Services can create subdirectories as needed
-- **lessons-learned/**: Postmortem-style records of real incidents (outages, near-misses) —
-  what happened and why, distinct from ADRs' forward-looking decision records. See
-  "Lessons Learned" below for its own naming convention and template.
+Record a decision when it affects at least one of:
 
-### Naming Convention
+- **Structure:** how the system is divided into components, services, stacks and stores
+- **Quality attributes:** security, availability, fault tolerance, cost, performance
+- **Dependencies:** what depends on what, including external systems
+- **Interfaces:** APIs, published contracts, entry points
+- **Construction techniques:** languages, frameworks, libraries, build and test tooling
 
-Format: `STATUS-PREFIX-###-descriptive-title.md`
+A decision that would be hard to reverse almost always qualifies.
 
-- **STATUS**: Status indicator
-  - `A-`: Accepted
-  - `P-`: Proposed
-  - `S-`: Superseded
-  - `R-`: Rejected
-- **PREFIX**: Category-specific prefix
-  - `META-###`: ADR process and organizational decisions
-  - `DEV-###`: global/development decisions
-  - `INFRA-###`: global/infrastructure decisions
-  - Service initials (e.g., `UDS-###`): service-specific decisions
-- **###**: Sequential number within each category (001, 002, 003...)
-- **descriptive-title**: Kebab-case description of the decision
+These are **not** ADRs:
 
-Examples:
+- Features and their behavior
+- Business rules and domain policies
+- Single parameter values, limits and timeouts
+- Bug fixes and their explanations: that's what commit messages are for
+- Changelog entries
+- Work-management process
+- Incidents: those go in `lessons-learned/`
 
-- `A-INFRA-001-c4-model-for-architecture-documentation.md`
-- `P-INFRA-002-public-api-gateway-with-iam-restrictions.md`
-- `A-DEV-001-rust-coding-standards.md`
-- `S-UDS-001-old-dynamodb-table-design.md`
+When unsure, ask: would someone changing this later need to know *why* it was done this way, and would getting it wrong reshape the system? If not, it belongs in a commit message.
 
-### Referencing ADRs
+## Writing a record
 
-Use the category and number for reference: "See INFRA-001" or "DEV-002"
+- Copy `template.md` to `decisions/NNNN-kebab-case-title.md`, using the next number in the sequence.
+- **One decision per record.** A decision rolled out in phases gets one record per phase.
+- **Lead with the decision.** Context and options follow.
+- **Why, not how.** No code, configuration, file paths or step-by-step instructions. Link to supporting material instead of embedding it; the record must still stand on its own.
+- **About one page.** Pithy, assertive, factual.
+- **Don't hide consequences.** List the costs alongside the benefits.
 
-## Template
+## Numbering and references
 
-Use `template.md` for creating new ADRs.
+- Records live in `decisions/`, numbered in one sequence across the whole workspace: `0001`, `0002`, ...
+- Numbers are never reused.
+- Refer to a record as `ADR-0001`.
+- Status lives in the file, never in the filename, so files are never renamed.
+
+## Lifecycle
+
+| Status | Meaning |
+|---|---|
+| Proposed | Under discussion. The content may still change. |
+| Accepted | Decided. The content is frozen. |
+| Rejected | Decided against. The content is frozen and states why, so the question isn't reopened. |
+| Superseded | Replaced by a later record, named on the Status line. |
+| Deprecated | No longer in effect, with no replacement. The reason is given on the Status line. |
+
+- A record is committed to `main` as Proposed.
+- It becomes Accepted or Rejected only on the decider's explicit approval. On approval, the Status line and Date are updated, and the content is frozen.
+- To change a decision, write a new record that supersedes the old one. On the old record, only the Status line changes, to point at its replacement.
+- Records are never deleted.
+
+## Using the log
+
+- Check for an existing record before architectural work, and write one when a qualifying decision is made.
+- In code review, a change that contradicts an accepted record is either reworked, or a superseding record is written first.
+- Each workspace repository's README links here.
+- Past decisions that were never recorded may be added retroactively, dated when they were made.
+
+## Legacy records
+
+Records in `global/` and `services/` predate ADR-0001. They keep their `PREFIX-###` identifiers and filenames, because code and other records cite them. Their `A-`/`P-`/`S-`/`R-` filename prefixes are historical. The Status line inside each file is authoritative, and they are no longer renamed when their status changes. No new records are added there.
 
 ## Lessons Learned
 
