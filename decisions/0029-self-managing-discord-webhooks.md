@@ -1,6 +1,6 @@
 # 0029: Self-Managing Discord Webhooks
 
-**Status:** Proposed\
+**Status:** Accepted 2026-10-14\
 **Date:** 2026-09-16\
 **Deciders:** Jean-Sébastien Dominique\
 **Scope:** `riplomacy_bot`\

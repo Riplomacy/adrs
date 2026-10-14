@@ -1,6 +1,6 @@
 # 0033: GitHub as an External Dependency for Issue Filing
 
-**Status:** Proposed\
+**Status:** Accepted 2026-10-14\
 **Date:** 2026-10-07\
 **Deciders:** Jean-Sébastien Dominique\
 **Scope:** `riplomacy_bot`\

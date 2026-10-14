@@ -53,7 +53,7 @@ When unsure, ask: would someone changing this later need to know *why* it was do
 | Deprecated | No longer in effect, with no replacement. The reason is given on the Status line. |
 
 - A record is committed to `main` as Proposed.
-- It becomes Accepted or Rejected only on the decider's explicit approval. On approval, the Status line and Date are updated, and the content is frozen.
+- It becomes Accepted or Rejected only on the decider's explicit approval. On approval, the Status line records the outcome and its date (for example `Accepted 2026-10-14`), the Date line keeps when the record was proposed, and the content is frozen.
 - To change a decision, write a new record that supersedes the old one. On the old record, only the Status line changes, to point at its replacement.
 - Records are never deleted.
 

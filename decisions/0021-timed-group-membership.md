@@ -1,6 +1,6 @@
 # 0021: Timed Group Membership
 
-**Status:** Proposed\
+**Status:** Accepted 2026-10-14\
 **Date:** 2025-12-14\
 **Deciders:** Jean-Sébastien Dominique\
 **Scope:** `riplomacy_bot`\

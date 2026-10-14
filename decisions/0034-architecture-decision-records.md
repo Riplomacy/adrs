@@ -1,6 +1,6 @@
 # 0034: Architecture Decision Records for Architecturally Significant Decisions Only
 
-**Status:** Proposed\
+**Status:** Accepted 2026-10-14\
 **Date:** 2026-10-14\
 **Deciders:** Jean-Sébastien Dominique\
 **Scope:** Workspace\
